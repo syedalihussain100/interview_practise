@@ -631,8 +631,12 @@ const ages = [10, 11, 14, 15, 16, 18, 20, 21, 22, 23, 24, 17, 25, 30, 32, 45];
 // console.log(total)
 
 
-let reduceage = ages.reduce((elm, index) => {
-    return elm + index
-}, 0)
+// let reduceage = ages.reduce((elm, index) => {
+//     return elm + index
+// }, 0)
 
-console.log(reduceage)
+// console.log(reduceage)
+
+//UNDEFINED && NOT DEFINED
+
+

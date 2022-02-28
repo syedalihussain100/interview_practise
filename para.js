@@ -176,3 +176,10 @@
 
 
 
+// console.log(a)
+var a;
+if (a === undefined) {
+    console.log('undifined');
+} else {
+    console.log('not defined')
+}
