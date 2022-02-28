@@ -549,13 +549,16 @@ let printDetails = function (city, country, thirt) {
     console.log(this.name + " " + city + " " + country + " " + thirt)
 }
 
-
 //  function borrowing
-printDetails.call(myObj1, "Karachi", "Pakistan")
+// printDetails.call(myObj1, "Karachi", "Pakistan",'anydat')
 //  function apply
-printDetails.apply(myObj1,["Lahore","Pakistan","lo"])
+// printDetails.apply(myObj1, ["Lahore", "Pakistan", "lo"])
 
-// function bind
+// function bind calling the copy then run
+let checks = printDetails.bind(myObj1,'Queetta',"Pakistan","My Wishes");
+checks()
+
+
 
 let user2 = {
     name: "Takla BHai",
@@ -564,4 +567,8 @@ let user2 = {
     date: new Date().toLocaleTimeString()
 }
 
-printDetails.call(user2, "Karachi", "Pakistan")
+// printDetails.call(user2, "Karachi", "Pakistan",'some data')
+
+let check = printDetails.bind(user2,'Queetta',"Pakistan","My Wishes");
+check()
+
