@@ -555,6 +555,8 @@ printDetails.call(myObj1, "Karachi", "Pakistan")
 //  function apply
 printDetails.apply(myObj1,["Lahore","Pakistan","lo"])
 
+// function bind
+
 let user2 = {
     name: "Takla BHai",
     email: 'takla@gmail.com',
