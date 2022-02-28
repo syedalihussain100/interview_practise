@@ -327,13 +327,13 @@
 
 
 
-const companies = [
-    { name: "Google", category: "Product Based", start: 1989, end: 2004 },
-    { name: "Amazon", category: "Product Based", start: 1999, end: 2008 },
-    { name: "Paytm", category: "Product Based", start: 1999, end: 2007 },
-    { name: "Coforge", category: "Service Based", start: 1989, end: 2010 },
-    { name: "Mindtree", category: "Service Based", start: 1989, end: 2010 },
-]
+// const companies = [
+//     { name: "Google", category: "Product Based", start: 1989, end: 2004 },
+//     { name: "Amazon", category: "Product Based", start: 1999, end: 2008 },
+//     { name: "Paytm", category: "Product Based", start: 1999, end: 2007 },
+//     { name: "Coforge", category: "Service Based", start: 1989, end: 2010 },
+//     { name: "Mindtree", category: "Service Based", start: 1989, end: 2010 },
+// ]
 
 
 
@@ -555,7 +555,7 @@ let printDetails = function (city, country, thirt) {
 // printDetails.apply(myObj1, ["Lahore", "Pakistan", "lo"])
 
 // function bind calling the copy then run
-let checks = printDetails.bind(myObj1,'Queetta',"Pakistan","My Wishes");
+let checks = printDetails.bind(myObj1, 'Queetta', "Pakistan", "My Wishes");
 checks()
 
 
@@ -569,6 +569,54 @@ let user2 = {
 
 // printDetails.call(user2, "Karachi", "Pakistan",'some data')
 
-let check = printDetails.bind(user2,'Queetta',"Pakistan","My Wishes");
+let check = printDetails.bind(user2, 'Queetta', "Pakistan", "My Wishes");
 check()
 
+
+// HIGH_ORDER FUNCTION
+const companies = [
+    { name: "Google", category: "Product Based", start: 1989, end: 2004 },
+    { name: "Amazon", category: "Product Based", start: 1999, end: 2008 },
+    { name: "Paytm", category: "Product Based", start: 1999, end: 2007 },
+    { name: "Coforge", category: "Service Based", start: 1989, end: 2010 },
+    { name: "Mindtree", category: "Service Based", start: 1989, end: 2010 },
+]
+
+const ages = [10, , 11, 14, 15, 16, 18, 20, 21, 22, 23, 24, 17, 25, 30, 32, 45];
+
+
+// for(let i = 0; i < ages.length; i++){
+//     if(ages[i] >= 20){
+//         console.log(ages[i])
+//     }
+// }
+
+
+// const age = ages.filter((elm) => elm >= 30);
+// console.log(age)
+
+// let check1 = companies.filter(function (elm) {
+//     if (elm.category === "Product Based") {
+//         return true
+//     } else {
+//         return false
+//     }
+// })
+
+// console.log(check1)
+
+// let check2 = companies.filter((elm)=> elm.category === "Product Based");
+// console.log(check2)
+
+// let checka = companies.map((elm)=>{
+//     return elm.name
+// })
+
+// console.log(checka)
+
+
+// let sorted = companies.sort((c1,c2)=> (c1.start < c2.start ? 1 : -1));
+// console.log(sorted)
+
+// let agesorted = ages.sort((a,b)=> (b - a));
+// console.log(agesorted)
