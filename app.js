@@ -582,7 +582,7 @@ const companies = [
     { name: "Mindtree", category: "Service Based", start: 1989, end: 2010 },
 ]
 
-const ages = [10, , 11, 14, 15, 16, 18, 20, 21, 22, 23, 24, 17, 25, 30, 32, 45];
+const ages = [10, 11, 14, 15, 16, 18, 20, 21, 22, 23, 24, 17, 25, 30, 32, 45];
 
 
 // for(let i = 0; i < ages.length; i++){
@@ -620,3 +620,19 @@ const ages = [10, , 11, 14, 15, 16, 18, 20, 21, 22, 23, 24, 17, 25, 30, 32, 45];
 
 // let agesorted = ages.sort((a,b)=> (b - a));
 // console.log(agesorted)
+
+
+// REDUCE
+
+// let total = 0;
+// for (let i = 0; i < ages.length; i++) {
+//     total += ages[i]
+// }
+// console.log(total)
+
+
+let reduceage = ages.reduce((elm, index) => {
+    return elm + index
+}, 0)
+
+console.log(reduceage)
